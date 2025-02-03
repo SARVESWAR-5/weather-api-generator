@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  background: linear-gradient(135deg, #e0f7fa, #80deea, #4dd0e1); /* Light cyan gradient */
+  color: #333; /* Darker text for better readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Light background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Input Section */
+.input-section input {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #f9f9f9; /* Light grey background */
+  transition: all 0.3s ease;
+}
+
+.input-section input:focus {
+  border-color: #4dd0e1; /* Light cyan border */
+  outline: none;
+  background-color: #ffffff;
+}
+
+.input-section .btn-gradient {
+  background: linear-gradient(90deg, #4dd0e1, #80deea); /* Light cyan gradient */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.input-section .btn-gradient:hover {
+  background: linear-gradient(90deg, #80deea, #4dd0e1);
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+.table {
+  background: rgba(255, 255, 255, 0.9); /* Light white background */
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.table-dark {
+  background: linear-gradient(90deg, #80deea, #4dd0e1); /* Lighter cyan */
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #4dd0e1; /* Light cyan background for header */
+  color: #fff;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f1f1f1; /* Very light grey for even rows */
+}
+
+.table tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+/* Chart Styles */
+.chart-container {
+  background: rgba(255, 255, 255, 0.8); /* Slightly lighter background */
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  max-height: 450px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Map Styles */
+#map {
+  height: 400px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#map:hover {
+  transform: scale(1.02);
+}
