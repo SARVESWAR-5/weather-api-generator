@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Comparison App</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <!-- Leaflet.js for maps -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center text-primary">Weather Comparison App</h1>
+    <p class="text-center">Compare weather conditions for multiple cities.</p>
+
+    <!-- Input Section -->
+    <div class="input-section text-center mb-4">
+      <input
+        type="text"
+        id="keyword"
+        class="form-control d-inline w-50"
+        placeholder="Enter city names (comma-separated, e.g., London, Paris, New York)"
+      />
+      <button id="fetch-button" class="btn btn-primary mt-2">Fetch & Compare</button>
+    </div>
+
+    <!-- Data Display Section -->
+    <div id="data-display" class="mt-4"></div>
+
+    <!-- Chart Section -->
+    <div class="chart-container mt-5">
+      <canvas id="weatherChart"></canvas>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map" class="mt-5" style="height: 400px;"></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Leaflet.js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
